@@ -9,16 +9,20 @@ public class Main {
         String[] perguntas = {
                 "01. Quem é a única mulher que apareceu na foto: \"reunião dos maiores cientistas do mundo\" : \"A Foto Mais \n Inteligente do Mundo\"?",
                 "02. Qual é o maior planeta do Sistema Solar?",
-                "03. Quem é conhecido como o \"pai da tabela periódica\"?"
+                "03. Quem é conhecido como o \"pai da tabela periódica\"?",
+                "04. Alan Turing é considerado o pai da:"
         };
 
         String[][] opcoes = {
                 {"a. Caroline Herschel", "b. Rosalind Franklin", "c. Marie Curie", "d. Margaret Heafield", "e. Valentina Tereshkova"},
                 {"a. Urano", "b. Júpiter", "c. Terra", "d. Vênus", "e. Marte"},
-                {"a. Isaac Newton", "b. Amedeo Avogadro", "c. Yuan Ceo", "d. Anthony Brown", "e. Dmitri Medeleev"}
+                {"a. Isaac Newton", "b. Amedeo Avogadro", "c. Yuan Ceo", "d. Anthony Brown", "e. Dmitri Medeleev"},
+                {"a. Computação", "b. Ciência", "c. Genética", "d. Psicanalise", "e. Física"}
+
+
         };
 
-        String[] corretas = {"c", "b", "e"};
+        String[] corretas = {"c", "b", "e", "a"};
 
         for (int i = 0; i < perguntas.length; i++) {
             leia.pergunta = perguntas[i];
