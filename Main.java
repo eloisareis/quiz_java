@@ -51,7 +51,8 @@ public class Main {
         System.out.println("|   Eloisa de Castro Reis                                                                               |");
         System.out.println("|   Brenno Pimenta                                                                                      |");
         System.out.println("|                                                                                                       |");
-        System.out.println("|   - Olá! Bem vindos. Abaixo você irá responder um quiz de 15 perguntas com 5 alternativas. Boa sorte! |");
+        System.out.println("|   - Olá! Bem vindos. Abaixo você irá responder um quiz de 15 perguntas com 5 alternativas. O tema do  |");
+        System.out.println("|  quiz é Tecnologia e Programação. Boa sorte!                                                          |");
         System.out.println("|-------------------------------------------------------------------------------------------------------|");
         System.out.println("");
 
@@ -80,9 +81,12 @@ public class Main {
             }
         }
 
+        System.out.println("|-------------------------------------------------------------------------------------------------------|");
         double porcentagemAcertos = ((double) acertos / perguntas.length) * 100;
-        System.out.println("Quantidade de acertos: " + acertos);
-        System.out.println("Quantidade de erros: " + erros);
-        System.out.printf("Porcentagem de acertos: %.2f%%\n", porcentagemAcertos);
+        System.out.println(" Resultados");
+        System.out.println("");
+        System.out.println(" Quantidade de acertos: " + acertos);
+        System.out.println(" Quantidade de erros: " + erros);
+        System.out.printf(" Porcentagem de acertos: %.2f%%\n", porcentagemAcertos);
     }
 }
