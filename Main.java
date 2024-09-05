@@ -45,6 +45,7 @@ public class Main {
         //                    1    2    3    4    5    6    7    8    9   10   11   12   13    14   15
         String[] corretas = {"c", "b", "e", "a", "d", "a", "c", "e", "b", "d", "c", "a", "b", "d", "e"};
 
+        System.out.println("");
         System.out.println("|-------------------------------------------------------------------------------------------------------|");
         System.out.println("|   Centro Universitário Alfredo Nasser                                                                 |");
         System.out.println("|   Eloisa de Castro Reis                                                                               |");
@@ -52,6 +53,11 @@ public class Main {
         System.out.println("|                                                                                                       |");
         System.out.println("|   - Olá! Bem vindos. Abaixo você irá responder um quiz de 15 perguntas com 5 alternativas. Boa sorte! |");
         System.out.println("|-------------------------------------------------------------------------------------------------------|");
+        System.out.println("");
+
+        System.out.println("                                                   Perguntas");
+        System.out.println("");
+
 
         for (int i = 0; i < perguntas.length; i++) {
             leia.pergunta = perguntas[i];
