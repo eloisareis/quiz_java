@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Questao leia = new Questao();
+        int acertos = 0;
+        int erros   = 0;
 
         String[] perguntas = {
                 "01. Quem é a única mulher que apareceu na foto: \"reunião dos maiores cientistas do mundo\" : \"A Foto Mais \n Inteligente do Mundo\"?",
@@ -16,16 +20,25 @@ public class Main {
 
         for (int i = 0; i < perguntas.length; i++) {
             leia.pergunta = perguntas[i];
-            leia.opcaoA   = opcoes[i][1];
-            leia.opcaoB   = opcoes[i][2];
-            leia.opcaoC   = opcoes[i][3];
-            leia.opcaoD   = opcoes[i][4];
-            leia.opcaoE   = opcoes[i][5];
+            leia.opcaoA   = opcoes[i][0];
+            leia.opcaoB   = opcoes[i][1];
+            leia.opcaoC   = opcoes[i][2];
+            leia.opcaoD   = opcoes[i][3];
+            leia.opcaoE   = opcoes[i][4];
             leia.correta  = corretas[i];
 
             leia.escrevaQuestao();
             String resposta = leia.leiaResposta();
             Boolean correta = leia.isCorreta(resposta);
+
+            if (correta) {
+                acertos++;
+            } else {
+                erros++;
+            }
         }
+
+
+        double porcentagemAcertos = ((double) acertos / 15) * 100;
     }
 }
