@@ -14,8 +14,8 @@ public class Main {
 
         String[] corretas = {"c", "b"};
 
-        for (int i = 0; i < 15; i++) {
-            leia.pergunta = perguntas[i][0];
+        for (int i = 0; i < perguntas.length; i++) {
+            leia.pergunta = perguntas[i];
             leia.opcaoA   = opcoes[i][1];
             leia.opcaoB   = opcoes[i][2];
             leia.opcaoC   = opcoes[i][3];
