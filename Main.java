@@ -8,15 +8,17 @@ public class Main {
 
         String[] perguntas = {
                 "01. Quem é a única mulher que apareceu na foto: \"reunião dos maiores cientistas do mundo\" : \"A Foto Mais \n Inteligente do Mundo\"?",
-                "02. Qual é o maior planeta do Sistema Solar?"
+                "02. Qual é o maior planeta do Sistema Solar?",
+                "03. Quem é conhecido como o \"pai da tabela periódica\"?"
         };
 
         String[][] opcoes = {
                 {"a. Caroline Herschel", "b. Rosalind Franklin", "c. Marie Curie", "d. Margaret Heafield", "e. Valentina Tereshkova"},
-                {"a. Urano", "b. Júpiter", "c. Terra", "d. Vênus", "e. Marte"}
+                {"a. Urano", "b. Júpiter", "c. Terra", "d. Vênus", "e. Marte"},
+                {"a. Isaac Newton", "b. Amedeo Avogadro", "c. Yuan Ceo", "d. Anthony Brown", "e. Dmitri Medeleev"}
         };
 
-        String[] corretas = {"c", "b"};
+        String[] corretas = {"c", "b", "e"};
 
         for (int i = 0; i < perguntas.length; i++) {
             leia.pergunta = perguntas[i];
@@ -38,9 +40,9 @@ public class Main {
             }
         }
 
-        double porcentagemAcertos = ((double) acertos / 2) * 100;
-        System.out.println(acertos);
-        System.out.println(erros);
-        System.out.println(porcentagemAcertos);
+        double porcentagemAcertos = ((double) acertos / perguntas.length) * 100;
+        System.out.println("Quantidade de acertos: " + acertos);
+        System.out.println("Quantidade de erros: " + erros);
+        System.out.printf("Porcentagem de acertos: %.2f%%\n", porcentagemAcertos);
     }
 }
