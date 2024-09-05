@@ -38,7 +38,9 @@ public class Main {
             }
         }
 
-
-        double porcentagemAcertos = ((double) acertos / 15) * 100;
+        double porcentagemAcertos = ((double) acertos / 2) * 100;
+        System.out.println(acertos);
+        System.out.println(erros);
+        System.out.println(porcentagemAcertos);
     }
 }
